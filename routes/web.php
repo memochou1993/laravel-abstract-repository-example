@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/id/{id}', 'UserController@getById');
+Route::get('/email/{email}', 'UserController@getByEmail');
